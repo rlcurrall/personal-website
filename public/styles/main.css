@@ -1,0 +1,308 @@
+/* ----------------------------------------------- */
+/* type selector */
+/* ----------------------------------------------- */
+
+html {
+	background: #ffddb6;
+}
+
+header a, header a:visited, header a:focus, header a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+main a, main a:visited, main a:focus, main a:hover {
+    color: navy;
+    text-decoration: none;
+}
+
+.page_nav a, .page_nav a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.anchor {
+    position: relative;
+    top: -30px;
+}
+
+
+
+/* ----------------------------------------------- */
+/* header styles */
+/* ----------------------------------------------- */
+
+header {
+	
+}
+
+header ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+header h3 {
+	text-align: center;
+    margin: 0 auto 1em auto;
+}
+
+header {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: 2;
+    color: white;
+}
+
+*, :after, :before {
+    box-sizing: inherit;
+}
+.aside-bg {
+    background-color: rgba(12, 51, 68, 0.8);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+header::before {
+    position: absolute;
+    content: '';
+    display: block;
+    background-image: url(../images/linville.png);
+    background-size: cover;
+    height: 675px;
+    width: 100%;
+}
+
+.aside {
+    position: relative;
+}
+
+
+header {
+    color: white;
+    position: relative;
+}
+
+/* ----------------------------------------------- */
+/* main styles */
+/* ----------------------------------------------- */
+
+main {
+	
+}
+
+main h2 {
+	border-bottom: 2px solid black;
+}
+
+.code img {
+	display: inline-block;
+	margin: 0 auto;
+	width: 64px;
+    z-index: 2;
+}
+
+.code {
+	text-align: center;
+}
+
+.contact p {
+    max-width: 40rem;
+}
+.contact dl {
+    width:20rem;
+/*    margin: 2rem 5rem;*/
+    line-height: 1.5rem;
+}
+.contact dt {
+    display: block;
+    float: left;
+    clear: both;
+    width: 5rem;
+}
+.contact dd {
+    display: block;
+    float: left;
+}
+
+.job {
+    margin: 2rem;
+}
+
+dl {
+    font: 95%;
+    width: 90%;
+    margin: auto auto;
+    padding: 0.5em;
+}
+dt {
+    font-weight: bold;
+    text-decoration: underline;
+}
+main h3 {
+    font-weight: bold;
+    padding: 1em 0;
+}
+main img {
+    margin: 10px;
+}
+#beaufort {
+    float: left;
+    margin: auto 1rem;
+}
+
+/* ----------------------------------------------- */
+/* footer styles */
+/* ----------------------------------------------- */
+
+footer {
+	
+}
+
+/* ----------------------------------------------- */
+/* responsive design styles */
+/* ----------------------------------------------- */
+
+.separator {
+  display: none;
+}
+
+.slicknav_menu {
+  display: none;
+}
+
+/* ----------------------------------------------- */
+/* Desktop styles */
+/* ----------------------------------------------- */
+
+@media only screen and (min-width: 880px){
+	header {
+		width: 18rem;
+		position: fixed;
+		top: 0;
+		left: 0;
+/*		z-index: 10;*/
+		height: 100%;
+		line-height: 2rem;
+		}
+	main {
+		margin-left: 18rem;
+/*		padding: 1rem;*/
+	}
+    .main {
+        padding: 1rem;
+    }
+    .contact {
+        margin: 1rem;
+    }
+	.menu_title {
+		display: block;
+		border-bottom: 2px solid white;
+		margin: 1rem 3rem;
+/* 		padding: 1rem; */
+	}
+	header img {
+		display: block;
+		width: 15rem;
+		margin: 2rem auto 0 auto;
+/* 		border: 2px solid white; */
+/* 		border-radius: 10px; */
+	}
+    header ul {
+        text-align: center;
+    }
+    .nav_bar {
+        display: none;
+    }
+    .side_icon {
+        display: none;
+    }
+	
+	.links {
+		text-align: center;
+	}
+	
+	.links img {
+		border: none;
+		width: 32px;
+		display: inline-block;
+		padding: 0.5em;
+	}
+
+        .anchor {
+            display: block;
+            position: relative;
+            top: -50px;
+            visibility: hidden;
+        }
+
+}
+
+/* keep image from being smaller than window display */
+@media only screen and (min-height: 675px){
+    header::before {
+        height: 100%;
+    }
+}
+
+/* ----------------------------------------------- */
+/* mobile styles */
+/* ----------------------------------------------- */
+
+@media only screen and (max-width: 880px){
+	header {
+		width: 100%;
+		margin: 0;
+	}
+	main {
+/*		margin: 0.5rem;*/
+		padding-bottom: 2rem;
+	}
+    .main {
+        margin: 0.5rem;
+    }
+    .contact {
+        margin: 0.5rem;
+    }
+    .menu_title {
+        display: none;
+    }
+	header img {
+		display: block;
+		width: 15rem;
+		margin: 2rem auto 0 auto;
+	}
+    .nav_bar {
+        display: inline-block;
+        margin: 1em 0.5em 0 0.5em;
+        padding: 0;
+        float: left;
+    }
+    .side_icon {
+        display: inline-block;
+        width: 24px;
+        margin: 0;
+    }
+	
+	.links {
+		display: none;
+	}
+	
+	footer {
+		text-align: center;
+		margin: 0 auto;
+		padding: 1em;
+		background-color: #0c3344;
+	}
+	
+    #nav_menu {
+        display: none;
+    }
+    .slicknav_menu {
+        display: block;
+    }
+    #mobilemenu {
+        width: 100%;
+    }
+}
