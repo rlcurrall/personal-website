@@ -84,6 +84,10 @@ header {
     position: relative;
 }
 
+.side_icon:hover {
+    src: url(images/icons/black_email.png);
+}
+
 /* ----------------------------------------------- */
 /* main styles */
 /* ----------------------------------------------- */
@@ -251,14 +255,14 @@ footer {
 /* ----------------------------------------------- */
 
 @media only screen and (max-width: 880px){
-	header {
-		width: 100%;
-		margin: 0;
-	}
-	main {
+    header {
+            width: 100%;
+            margin: 0;
+    }
+    main {
 /*		margin: 0.5rem;*/
-		padding-bottom: 2rem;
-	}
+            padding-bottom: 2rem;
+    }
     .main {
         margin: 0.5rem;
     }
