@@ -87,19 +87,71 @@
             }
             
             @media only screen and (max-width: 880px) {
-                html, body, header {
+                html, body, header, .nav_menu {
                     height: 100%;
+                    width: 100%;
                 }
+                
+                .nav_menu {
+                    position: fixed;
+                    top: 2em;
+                }
+                
                 .nav_menu ul {
                     text-align: center;
-                    margin: 1em;
+                    width: 100%;
                 }
                 .nav_menu ul li {
                     display: inline;
-                    margin: 2em;
+                    margin: 0.5em;
                     padding: 1em;
                 }
+                
+                .links {
+                    display: inline-block;
+                    position: fixed;
+                    bottom: 0;
+                    width: 100%;
+                    text-align: center;
+                }
+                
+                .links img {
+                    width: 32px;
+                    display: inline-block;
+                    border: none;
+                    padding: 0.5em;
+                }
+                
+                .home_logo {
+                    animation: fadein 4s;
+                    -moz-animation: fadein 4s; /* Firefox */
+                    -webkit-animation: fadein 4s; /* Safari and Chrome */
+                    -o-animation: fadein 4s; /* Opera */
+
+                    transition: transform .4s;
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    margin-top: -120px;
+                    margin-left: -106px;
+                }
+                
+                .home_logo:hover {
+                    transform: scale(1.2);
+                }
+                
+                @keyframes fadein {
+                    from {opacity: 0;}
+                    to {opacity: 1;}
+                }
+                
+                .nav_menu ul li:hover {
+                    background-color: rgb(12, 51, 88);
+                    border: 0 solid rgb(12, 51, 88);
+                    border-radius: 1em;
+                }
             }
+            
 	</style>
 </head>
 
