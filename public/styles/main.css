@@ -76,6 +76,7 @@ header::before {
 
 .aside {
     position: relative;
+    height: 100%;
 }
 
 
@@ -225,6 +226,9 @@ footer {
 	
 	.links {
 		text-align: center;
+                width: 288px;
+                position: fixed;
+                bottom: 0;
 	}
 	
 	.links img {
