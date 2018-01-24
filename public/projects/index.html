@@ -27,7 +27,7 @@
     <!-- Page specific styles -->
     <style>
         .projects {
-            /*margin: 0 auto;*/
+            margin: 0 auto;
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
@@ -36,14 +36,22 @@
             
         }
         .pimg {
-            margin: 1em;
-            width: 200px;
+            margin: 1em auto;
+            width: 350px;
             background-color: rgba(0,0,0, 0.5);
             border: 3px white;
-            border-radius: 1em;
+            border-radius: 0.75em;
+            overflow: hidden;
+            transition: transform .4s;
+        }
+        .pimg img {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            z-index: -1;
         }
         .pimg:hover {
-            opacity: 0.5;
+            
         }
         .thumb-nail {
             display: inline;
@@ -57,11 +65,24 @@
         .desc p {
             color: white;
             text-align: center;
+            padding: 0;
+            margin: 0.5em;
+        }
+        #content {
+            max-width: 775px;
+            margin: 0 auto;
+            display: block;
         }
         
         @media only screen and (max-width: 880px){
             .pimg {
                 margin: 1em auto;
+            }
+        }
+        
+        @media only screen and (min-width: 880px){
+            .pimg:hover {
+                transform: scale(1.1);
             }
         }
     </style>
@@ -70,100 +91,96 @@
 <body>
   
   <!-- Header Section -->
-  <header>
-		<div class="aside-bg"></div>
-      <div class="aside">
-		<a href="..">
-			<img src="../images/logo_thin1.png" title="Home" alt="Currall Logo">
-		</a>
+<header>
+    <div class="aside-bg"></div>
+    <div class="aside">
+        <a href="..">
+            <img src="../images/logo_thin1.png" title="Home" alt="Currall Logo">
+        </a>
         <h3>Robert Currall</h3>
-		<span class="menu_title"></span>
+        <span class="menu_title"></span>
         <div class="nav_bar">
             <a href="https://github.com/rlcurrall" target="_blank">
-				<img src="../images/icons/white_github.png" title="Github" onmouseout="this.src='../images/icons/white_github.png';" onmouseover="this.src='../images/icons/black_github.png';" class="side_icon">
-			</a>
-			<a href="https://www.linkedin.com/in/rob-currall-75450366" target="_blank">
-				<img src="../images/icons/white_linkedin.png" title="Linkedin" onmouseout="this.src='../images/icons/white_linkedin.png';" onmouseover="this.src='../images/icons/black_linkedin.png';" class="side_icon">
-			</a>
-			<a href="mailto:rlcurrall@gmail.com" target="_blank">
-				<img src="../images/icons/white_email.png" title="Email" onmouseout="this.src='../images/icons/white_email.png';" onmouseover="this.src='../images/icons/black_email.png';" class="side_icon">
-			</a>
-		</div>
-		<nav id="mobilemenu"></nav>
-		<nav id="nav_menu">
-			<ul>
-				<li><a href="../robert-currall/">About Me</a></li>
-				<li><a href="../projects/">Projects</a></li>
-				<li><a href="../contact/">Contact</a></li>
-			</ul>
-		</nav>
-		<div class="links">
-			<a href="https://github.com/rlcurrall" target="_blank">
-				<img src="../images/icons/white_github.png" title="Github" onmouseout="this.src='../images/icons/white_github.png';" onmouseover="this.src='../images/icons/black_github.png';">
-			</a>
-			<a href="https://www.linkedin.com/in/rob-currall-75450366" target="_blank">
-				<img src="../images/icons/white_linkedin.png" title="Linkedin" onmouseout="this.src='../images/icons/white_linkedin.png';" onmouseover="this.src='../images/icons/black_linkedin.png';">
-			</a>
-			<a href="mailto:rlcurrall@gmail.com" target="_blank">
-				<img src="../images/icons/white_email.png" title="Email" onmouseout="this.src='../images/icons/white_email.png';" onmouseover="this.src='../images/icons/black_email.png';">
-			</a>
-		  </div>
-      </div>
-	</header>
+                <img src="../images/icons/white_github.png" title="Github" onmouseout="this.src='../images/icons/white_github.png';" onmouseover="this.src='../images/icons/black_github.png';" class="side_icon">
+            </a>
+            <a href="https://www.linkedin.com/in/rob-currall-75450366" target="_blank">
+                <img src="../images/icons/white_linkedin.png" title="Linkedin" onmouseout="this.src='../images/icons/white_linkedin.png';" onmouseover="this.src='../images/icons/black_linkedin.png';" class="side_icon">
+            </a>
+            <a href="mailto:rlcurrall@gmail.com" target="_blank">
+                <img src="../images/icons/white_email.png" title="Email" onmouseout="this.src='../images/icons/white_email.png';" onmouseover="this.src='../images/icons/black_email.png';" class="side_icon">
+            </a>
+        </div>
+        <nav id="mobilemenu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="../robert-currall/">About</a></li>
+                <li><a href="../resume/">Resume</a></li>
+                <li><a href="../projects/">Projects</a></li>
+                <li><a href="../contact/">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="links">
+            <a href="https://github.com/rlcurrall" target="_blank">
+                <img src="../images/icons/white_github.png" title="Github" onmouseout="this.src='../images/icons/white_github.png';" onmouseover="this.src='../images/icons/black_github.png';">
+            </a>
+            <a href="https://www.linkedin.com/in/robb-currall" target="_blank">
+                <img src="../images/icons/white_linkedin.png" title="Linkedin" onmouseout="this.src='../images/icons/white_linkedin.png';" onmouseover="this.src='../images/icons/black_linkedin.png';">
+            </a>
+            <a href="mailto:robert@currall.net" target="_blank">
+                <img src="../images/icons/white_email.png" title="Email" onmouseout="this.src='../images/icons/white_email.png';" onmouseover="this.src='../images/icons/black_email.png';">
+            </a>
+        </div>
+    </div>
+</header>
 	
-  <!-- Main Section -->
-  <main>
-	<div class="main">
-            <h2>
-		Projects
-            </h2>
+<!-- Main Section -->
+<main>
+    <div class="main">
+        <h2 class="title">
+            Projects
+        </h2>
+        <div id="content">
             <div class="projects">
                 <div class="pimg">
-                    <a href="chatapp.html">
-                        <img src="" class="thumb-nail">
+                    <a href="http://chat.currall.net" target="_blank">
+                        <img src="images/chat1.png" class="thumb-nail">
                     </a>
-                    <div class="desc"><p>Chat Application</p></div>
+                    <div class="desc"><p>NodeJS Chat Application</p></div>
                 </div>
                 <div class="pimg">
-                    <a href="datavis.html">
-                        <img src="" class="thumb-nail">
+                    <a href="https://github.com/rlcurrall/DataVisualization" target="_blank">
+                        <img src="images/beam_1.png" class="thumb-nail">
                     </a>
                     <div class="desc"><p>Data Visualization of a Beam</p></div>
                 </div>
                 <div class="pimg">
-                    <a href="scroll.html">
-                        <img src="" class="thumb-nail">
+                    <a href="http://sabal.uscb.edu/~rcurrall" target="_blank">
+                        <img src="images/scroll_lock.png" class="thumb-nail">
                     </a>
                     <div class="desc"><p>Scroll Lock</p></div>
                 </div>
                 <div class="pimg">
-                    <a href="snw.html">
-                        <img src="" class="thumb-nail">
+                    <a href="https://github.com/rlcurrall/Seeds_of_the_New_World" target="_blank">
+                        <img src="images/santa_elena.PNG" class="thumb-nail">
                     </a>
                     <div class="desc"><p>Seeds of the New World</p></div>
                 </div>
                 <div class="pimg">
-                    <a href="oilspill.html">
-                        <img src="" class="thumb-nail">
+                    <a href="https://github.com/rlcurrall/Gulf_Spill" target="_blank">
+                        <img src="images/gulfspill.png" class="thumb-nail">
                     </a>
                     <div class="desc"><p>Oil Spill Project</p></div>
                 </div>
                 <div class="pimg">
-                    <a href="inventory.html">
-                        <img src="" class="thumb-nail">
+                    <a href="https://github.com/rlcurrall/CSCI_450_Inventory_API" target="_blank">
+                        <img src="images/carInv1.png" class="thumb-nail">
                     </a>
                     <div class="desc"><p>Vehicle Inventory API</p></div>
                 </div>
             </div>
-	</div>
-  </main>
-  
-  <!-- Footer Section -->
-<!--
-  <footer>
-    
-  </footer>
--->
-	
+        </div>
+    </div>
+</main>
+
 </body>
 </html>

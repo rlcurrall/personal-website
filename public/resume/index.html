@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <title>Robert Currall | Resume</title>
+  
+  <!-- Style sheets and favicon -->
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/slicknav.css">
+  
+  <!-- Script files -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="../js/jquery.slicknav.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#nav_menu').slicknav({
+                prependTo:"#mobilemenu"
+            });
+        });
+    </script>
+  
+  <!-- Page specific styles -->
+    <style>
+    main {
+        width: auto;
+    }
+    .page_nav {
+        position: fixed;
+        background: #0c3344;
+        top: 0;
+        left: 18rem;
+        right: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .page_nav ul {
+        list-style: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .page_nav ul li {
+        display: inline-block;
+        text-align: center;
+        width: 24%;
+        padding: 1em 0;
+        margin: 0;
+    }
+    .page_nav ul li:hover {
+        background: slategray;
+    }
+
+    @media only screen and (max-width: 880px) {
+        .page_nav {
+            position: relative;
+            left: 0;
+        }
+        .page_nav ul li {
+            width: 24%;
+        }
+    }
+
+    @media only screen and (min-width: 880px){
+        .main {
+            padding: 1rem;
+        }
+    }
+    
+    /* Table Styles */
+    .divTable {
+        margin: 0 auto;
+        display: table;
+        width: 98%;
+    }
+    
+    .divCol {
+        display: table-column;
+        float: left;
+    }
+    
+    .divRow {
+        display: table-row;
+        width: 100%;
+    }
+    
+    .col-title {
+        min-width: 12em;
+        width: 33.334%;
+    }
+    
+    .col-content {
+        margin-top: 1em;
+        min-width: 20em;
+        width: 66.666%;
+    }
+    
+    .sub-col {
+        min-width: 12em;
+        width: 33.333%;
+    }
+    
+    .col-title h2 {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .col-content h3, .sub-col h3 {
+        margin: 0.5em;
+        padding: 0;
+    }
+    
+    /* Experience styles */
+    .exp, .sch {
+        margin: 0 0 2em 0;
+        padding: 0;
+        
+    }
+    
+    .exp-comp, .sch-name {
+        margin: 0 0 0.5em 0;
+        padding: 0;
+        font-weight: 900;
+        font-size: 18px;
+    }
+    
+    .exp-location {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        position: relative;
+        float: left;
+    }
+    
+    .exp-title, .sch-degree {
+        margin: 0;
+        padding: 0;
+        font-style: italic;
+        font-weight: 700;
+    }
+    
+    .exp-date {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        position: relative;
+        float: right;
+    }
+    
+    .exp-desc {
+        margin-top: 1.5em;
+    }
+    
+    .res-download, .res-download:visited {
+        font-weight: 700;
+        padding: 0.5em 1em;
+        margin-top: 1em;
+        position: relative;
+        float: right;
+        margin-right: 1em;
+        color: black;
+        text-decoration: none;
+        border: 2px solid black;
+    }
+    
+    .res-download:hover {
+        background-color: rgb(12, 51, 68);
+        color: white;
+        text-decoration: none;
+    }
+    
+    @media only screen and (max-width: 880px) {
+        .res-download,.res-download:visited {
+            margin-top: -0.5em;
+        }
+    }
+
+    </style>
+</head>
+
+<body>
+  
+  <!-- Header Section -->
+  <header>
+    <div class="aside-bg"></div>
+    <div class="aside">
+        <a href="..">
+            <img src="../images/logo_thin1.png" title="Home" alt="Currall Logo">
+        </a>
+        <h3>Robert Currall</h3>
+        <span class="menu_title"></span>
+        <div class="nav_bar">
+            <a href="https://github.com/rlcurrall" target="_blank">
+                <img src="../images/icons/white_github.png" title="Github" onmouseout="this.src='../images/icons/white_github.png';" onmouseover="this.src='../images/icons/black_github.png';" class="side_icon">
+            </a>
+            <a href="https://www.linkedin.com/in/robb-currall" target="_blank">
+                <img src="../images/icons/white_linkedin.png" title="Linkedin" onmouseout="this.src='../images/icons/white_linkedin.png';" onmouseover="this.src='../images/icons/black_linkedin.png';" class="side_icon">
+            </a>
+            <a href="mailto:robert@currall.net" target="_blank">
+                <img src="../images/icons/white_email.png" title="Email" onmouseout="this.src='../images/icons/white_email.png';" onmouseover="this.src='../images/icons/black_email.png';" class="side_icon">
+            </a>
+        </div>
+        <nav id="mobilemenu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="../robert-currall/">About</a></li>
+                <li><a href="../resume/">Resume</a></li>
+                <li><a href="../projects/">Projects</a></li>
+                <li><a href="../contact/">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="links" style="bottom: 0;">
+            <a href="https://github.com/rlcurrall" target="_blank">
+                <img src="../images/icons/white_github.png" title="Github" onmouseout="this.src='../images/icons/white_github.png';" onmouseover="this.src='../images/icons/black_github.png';">
+            </a>
+            <a href="https://www.linkedin.com/in/rob-currall-75450366" target="_blank">
+                <img src="../images/icons/white_linkedin.png" title="Linkedin" onmouseout="this.src='../images/icons/white_linkedin.png';" onmouseover="this.src='../images/icons/black_linkedin.png';">
+            </a>
+            <a href="mailto:robert@currall.net" target="_blank">
+                <img src="../images/icons/white_email.png" title="Email" onmouseout="this.src='../images/icons/white_email.png';" onmouseover="this.src='../images/icons/black_email.png';">
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- Main Section -->
+<main class="main">
+    <a class="res-download" href="detailed-resume-18.pdf" download>Download</a>
+    <h2 class="title">
+        Resume
+    </h2>
+    
+    <div class="divTable">
+        <div class="divRow">
+            <div class="divCol col-title">
+                <h2>
+                    Technologies
+                </h2>
+            </div>
+            <div class="divCol sub-col">
+                <h3>Languages &amp; Libraries</h3>
+                <ul>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>Tcl/Tk</li>
+                    <li>MATLAB</li>
+                    <li>HTML5 / CSS3</li>
+                    <li>PHP</li>
+                    <li>SQL</li>
+                    <li>JavaScript</li>
+                    <li>Visual Tool Kit (VTK)</li>
+                    <li>MongoDB</li>
+                    <li>Express</li>
+                    <li>AngularJS</li>
+                    <li>NodeJS</li>
+                    <li>JQuery</li>
+                </ul>
+            </div>
+            <div class="divCol sub-col">
+                <h3>Software</h3>
+                <ul>
+                    <li>Visual Studio</li>
+                    <li>Microsoft SQL</li>
+                    <li>MySQL</li>
+                    <li>Eclipse</li>
+                    <li>NetBeans</li>
+                    <li>Aptana</li>
+                    <li>Heroku</li>
+                    <li>Git</li>
+                    <li>LaTeX</li>
+                </ul>
+            </div>
+        </div>
+        <div class="divRow">
+            <div class="divCol col-title">
+                <h2>
+                    Experience
+                </h2>
+            </div>
+            <div class="divCol col-content">
+                <div class="exp">
+                    <p class="exp-comp">University of South Carolina Beaufort</p>
+                    <p class="exp-title">Research Assistant</p>
+                    <p class="exp-location">Beaufort, SC</p>
+                    <p class="exp-date">December 2017 - Present</p>
+                    <p class="exp-desc">
+                        Working in conjunction with MUSC to develop and test 
+                        MATLAB software that can identify neurons in brain scans
+                        through image processing.
+                    </p>
+                </div>
+                <div class="exp">
+                    <p class="exp-comp">Geek Squad</p>
+                    <p class="exp-title">Consultation Agent</p>
+                    <p class="exp-location">Bluffton, SC</p>
+                    <p class="exp-date">May 2017 - Present</p>
+                    <p class="exp-desc">
+                        Engage clients to identify and resolve various computer 
+                        issues in a timely and efficient manner.
+                    </p>
+                </div>
+                <div class="exp">
+                    <p class="exp-comp">University of South Carolina Beaufort</p>
+                    <p class="exp-title">Computational Science Tutor</p>
+                    <p class="exp-location">Beaufort, SC</p>
+                    <p class="exp-date">August 2017 - Present</p>
+                    <p class="exp-desc">
+                        Provide assistance to students to understand complex
+                        concepts and various course work.
+                    </p>
+                </div>
+                <div class="exp">
+                    <p class="exp-comp">Association for Computing Machinery</p>
+                    <p class="exp-title">Chapter Chairman</p>
+                    <p class="exp-location">Beaufort, SC</p>
+                    <p class="exp-date">May 2017 - Present</p>
+                    <p class="exp-desc">
+                        Manage and provide leadership to the USCB ACM chapter, 
+                        as well as organize various club events throughout the
+                        year.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="divRow">
+            <div class="divCol col-title">
+                <h2>
+                    Education
+                </h2>
+            </div>
+            <div class="divCol col-content">
+                <div class="sch">
+                    <p class="sch-name">University of South Carolina Beaufort</p>
+                    <p class="sch-degree">Bachelor of Science in Computational Science</p>
+                    <p class="sch-status">Expected December 2018</p>
+                </div>
+                <div class="sch">
+                    <p class="sch-name">Coastal Carolina University</p>
+                    <p class="sch-degree">Courses in Applied Mathematics</p>
+                    <p class="sch-status">Transfered</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+	
+</body>
+</html>

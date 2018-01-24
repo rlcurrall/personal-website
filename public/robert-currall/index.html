@@ -2,271 +2,251 @@
 
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width,minimum-scale=1">
-	<title>Robert Currall | About Me</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <title>Robert Currall | About Me</title>
   
   <!-- Style sheets and favicon -->
-	<link rel="shortcut icon" href="../images/favicon.ico">
-	<link rel="stylesheet" href="../styles/normalize.css">
-	<link rel="stylesheet" href="../styles/main.css">
-	<link rel="stylesheet" href="../styles/slicknav.css">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css">
   
   <!-- Script files -->
-	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-	<script src="../js/jquery.slicknav.js"></script>
-	<script>
-		$(document).ready(function() {
-			$('#nav_menu').slicknav({
-				prependTo:"#mobilemenu"
-			});
-		});
-	</script>
-  
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="../js/jquery.slicknav.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#nav_menu').slicknav({
+                prependTo:"#mobilemenu"
+            });
+        });
+    </script>
+    
   <!-- Page specific styles -->
-	<style>
-        main {
-            width: auto;
-        }
+    <style>
+    main {
+        width: auto;
+    }
+    .page_nav {
+        position: fixed;
+        background: #0c3344;
+        top: 0;
+        left: 18rem;
+        right: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .page_nav ul {
+        list-style: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .page_nav ul li {
+        display: inline-block;
+        text-align: center;
+        width: 24%;
+        padding: 1em 0;
+        margin: 0;
+    }
+    .page_nav ul li:hover {
+        background: slategray;
+    }
+
+    @media only screen and (max-width: 880px) {
         .page_nav {
-            position: fixed;
-            background: #0c3344;
-            top: 0;
-            left: 18rem;
-            right: 0;
-            margin: 0;
-            padding: 0;
-        }
-        .page_nav ul {
-            list-style: none;
-            width: 100%;
-            margin: 0;
-            padding: 0;
+            position: relative;
+            left: 0;
         }
         .page_nav ul li {
-            display: inline-block;
-            text-align: center;
             width: 24%;
-            padding: 1em 0;
-            margin: 0;
         }
-        .page_nav ul li:hover {
-            background: slategray;
-        }
+    }
 
-        @media only screen and (max-width: 880px) {
-            .page_nav {
-                position: relative;
-                left: 0;
-            }
-            .page_nav ul li {
-                width: 24%;
-            }
+    @media only screen and (min-width: 880px){
+        .main {
+            padding: 1rem;
         }
+    }
+    
+    .ffacts {
+        width: 107.3%;
+        margin: 1em 0 1em -1em;
+        background-color: #e0e1e2;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 100;
+        line-height: 2em;
+        overflow: hidden;
+    }
+    
+    .ffacts p {
+        max-width: 30em;
+        margin: 0 auto;
+        padding: 4em;
+    }
+    
+    .sec_title {
+        font-weight: 900;
+        font-size: 18px;
+        font-style: italic;
+        margin: 1.5em;
+    }
+    
+    .sec_content {
+        margin: 1.5em;
+    }
+    
+    .pictures {
+        width: 75%;
+        margin: 0 auto;
+    }
+    
+    .pictures img {
+        vertical-align: bottom;
+    }
 
-        @media only screen and (min-width: 880px){
-            .main {
-                margin-top: 2em;
-                padding: 1rem;
-            }
-        }
-
-	</style>
+    </style>
 </head>
 
 <body>
   
   <!-- Header Section -->
   <header>
-		<div class="aside-bg"></div>
-      <div class="aside">
-		<a href="..">
-			<img src="../images/logo_thin1.png" title="Home" alt="Currall Logo">
-		</a>
-          <h3>Robert Currall</h3>
-		<span class="menu_title"></span>
+    <div class="aside-bg"></div>
+    <div class="aside">
+        <a href="..">
+            <img src="../images/logo_thin1.png" title="Home" alt="Currall Logo">
+        </a>
+        <h3>Robert Currall</h3>
+        <span class="menu_title"></span>
         <div class="nav_bar">
             <a href="https://github.com/rlcurrall" target="_blank">
-				<img src="../images/icons/white_github.png" title="Github" onmouseout="this.src='../images/icons/white_github.png';" onmouseover="this.src='../images/icons/black_github.png';" class="side_icon">
-			</a>
-			<a href="https://www.linkedin.com/in/rob-currall-75450366" target="_blank">
-				<img src="../images/icons/white_linkedin.png" title="Linkedin" onmouseout="this.src='../images/icons/white_linkedin.png';" onmouseover="this.src='../images/icons/black_linkedin.png';" class="side_icon">
-			</a>
-			<a href="mailto:rlcurrall@gmail.com" target="_blank">
-				<img src="../images/icons/white_email.png" title="Email" onmouseout="this.src='../images/icons/white_email.png';" onmouseover="this.src='../images/icons/black_email.png';" class="side_icon">
-			</a>
-		</div>
-		<nav id="mobilemenu"></nav>
-		<nav id="nav_menu">
-			<ul>
-				<li><a href="../robert-currall/">About Me</a></li>
-				<li><a href="../projects/">Projects</a></li>
-				<li><a href="../contact/">Contact</a></li>
-			</ul>
-		</nav>
-		<div class="links" style="bottom: 0;">
-			<a href="https://github.com/rlcurrall" target="_blank">
-				<img src="../images/icons/white_github.png" title="Github" onmouseout="this.src='../images/icons/white_github.png';" onmouseover="this.src='../images/icons/black_github.png';">
-			</a>
-			<a href="https://www.linkedin.com/in/rob-currall-75450366" target="_blank">
-				<img src="../images/icons/white_linkedin.png" title="Linkedin" onmouseout="this.src='../images/icons/white_linkedin.png';" onmouseover="this.src='../images/icons/black_linkedin.png';">
-			</a>
-			<a href="mailto:rlcurrall@gmail.com" target="_blank">
-				<img src="../images/icons/white_email.png" title="Email" onmouseout="this.src='../images/icons/white_email.png';" onmouseover="this.src='../images/icons/black_email.png';">
-			</a>
-		  </div>
-      </div>
-	</header>
-	
-     <div class="page_nav">
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#work">Work Experience</a></li>
-            <li><a href="#award">Honors &amp; Awards</a></li>
-        </ul>
+                <img src="../images/icons/white_github.png" title="Github" onmouseout="this.src='../images/icons/white_github.png';" onmouseover="this.src='../images/icons/black_github.png';" class="side_icon">
+            </a>
+            <a href="https://www.linkedin.com/in/rob-currall-75450366" target="_blank">
+                <img src="../images/icons/white_linkedin.png" title="Linkedin" onmouseout="this.src='../images/icons/white_linkedin.png';" onmouseover="this.src='../images/icons/black_linkedin.png';" class="side_icon">
+            </a>
+            <a href="mailto:rlcurrall@gmail.com" target="_blank">
+                <img src="../images/icons/white_email.png" title="Email" onmouseout="this.src='../images/icons/white_email.png';" onmouseover="this.src='../images/icons/black_email.png';" class="side_icon">
+            </a>
+        </div>
+        <nav id="mobilemenu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="../robert-currall/">About</a></li>
+                <li><a href="../resume/">Resume</a></li>
+                <li><a href="../projects/">Projects</a></li>
+                <li><a href="../contact/">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="links" style="bottom: 0;">
+            <a href="https://github.com/rlcurrall" target="_blank">
+                <img src="../images/icons/white_github.png" title="Github" onmouseout="this.src='../images/icons/white_github.png';" onmouseover="this.src='../images/icons/black_github.png';">
+            </a>
+            <a href="https://www.linkedin.com/in/robb-currall" target="_blank">
+                <img src="../images/icons/white_linkedin.png" title="Linkedin" onmouseout="this.src='../images/icons/white_linkedin.png';" onmouseover="this.src='../images/icons/black_linkedin.png';">
+            </a>
+            <a href="mailto:robert@currall.net" target="_blank">
+                <img src="../images/icons/white_email.png" title="Email" onmouseout="this.src='../images/icons/white_email.png';" onmouseover="this.src='../images/icons/black_email.png';">
+            </a>
+        </div>
     </div>
+</header>
 
-  <!-- Main Section -->
-  <main>
-	  <div class="main">
-<!--
-          <figure style="text-align: center; width: 100%; margin: 0; padding: 0;">
-          <img src="/images/stonemt.jpg" width="60%" slt="Trip to Stone Mountain" style="max-width: 500px; min-width: 250px; border: 5px solid white; border-radius: 20px">
-          </figure>
--->
-          <a name="about" class="anchor"></a>
-          <h2>
-              About Robert Currall
-          </h2>
-		  <p>
-			  I am currently a student at the University of South Carolina Beaufort where I am studying Computational Science. I enrolled in USCB in the fall of 2016 and have started my second semester, currently holding a 4.0 institutional GPA.
-		  </p>
-          <p>
-              Before I attended USCB I was a student at Coastal Carolina University from the fall of 2011 to the spring of 2015, at which point I made the move from Myrtle Beach and began the enrollment process at USCB. I studied Applied Mathematics at CCU but after taking a couple of computer science courses and then a course in cryptography I realized that I was in the wrong major and that computers were my passion.
-          </p>
-
-          <a name="education" class="anchor"></a>
-          <h2>
-              Education
-          </h2>
-          <p>
-              I am currently enrolled at the University of South Carolina, Beaufort. I transfered from
-              Coastal Carolina University which I atteneded from the Fall of 2011 to the Spring of 2015.
-              While at CCU, I studied Applied Mathematics and Pre-engineering. After taking a break for a year, I applied to USCB and began studying Computational Science. Here are some of the more notable courses I've taken and what they have encompassed.
-          </p>
-			<img src="../images/USC-Beaufort-Logo.png" width="80px"  id="beaufort">
-          <h3>
-              University of South Carolina - Beaufort
-          </h3>
-          <dl>
-              <dt>CSCI B102 - General Applications Programming HTML &amp JavaScript</dt>
-              <dd>Introduction to systematic computer problem-solving and programming for a variety of applications. Open to all majors. </dd>
-              <dt>CSCI B145 - Java Programming Algorithmic Design I</dt>
-              <dd>Problem solving, algorithmic design and programming. Three lectures and two laboratory hours per week. Open to all majors. </dd>
-              <dt>CSCI B320 - Database Systems Management</dt>
-              <dd>Provides foundations of database systems for students with little prior database experience; topics include relational algebra, data models, schema design and normalization, storage management, query, transaction, concurrency control and consistency </dd>
-          </dl>
-
-          <img src="../images/CCU-Logo.png" width="80px"  id="beaufort">
-          <h3>
-              Coastal Carolina University
-          </h3>
-          <dl>
-              <dt>MATH 348 - Rubik's Cube Mathematics</dt>
-              <dd>Analysis of group theory and permutation puzzles. Uses group theory to find tools to solve puzzles like the Rubik's cube and using the Rubik's cube to illustrate important topics in group theory.</dd>
-              <dt>MATH 408 - Cryptography</dt>
-              <dd>Classical, public-key, and symmetric-key cryptosystems. Basic number theory. Digital signature schemes. Applications to information assurance and cyber security.</dd>
-              <dt>MATH 452 - Complex Variables</dt>
-              <dd>The course covers the basic principles (both theory and applications) of differentiable complex-valued functions of a single complex variable. Topics include the complex number system, Cauchy-Riemann conditions, analytic functions and their properties, special analytic functions including linear fractional transformations, roots, exponential, Log, trigonmetric and hyperbolic functions of a complex variable; Complex integration and line integrals, Cauchy's theorem, Cauchy represenation, conformal mapping, Taylor and Laurent Series expansions; the calculus of residues and various applications.</dd>
-              <dt>ENGR 101 - Introduction to Engineering</dt>
-              <dd>This course introduces students to the science of engineering through design and practice. Emphasis is placed on the synthesis of knowledge, skills and the methodologies that are the essential to all types of engineering professions. The course is structured to integrate core scientific foundations into an engineering perspective through the use of team-based projects, analytical tools and technical communications.</dd>
-          </dl>
-
-          <a name="work" class="anchor"></a>
-          <h2>
-              Work Experience
-          </h2>
-          <p>
-             My employment history largely encompasses work
-             in the customer service industry,
-             as well as some experience in construction.
-
-          </p>
-
-          <h3>
-            Electronics Sales Associate - Walmart <br/>November 2016 to Present
-          </h3>
-          <p class="job">
-              <b>Description:</b><br/>Described merchandise and explain operation of merchandise to customers. Placed special orders
-              and called other stores to find desired items.Operated a cash register to process cash, check and
-              credit card transactions. Recommended merchandise based on customer needs. Explained information
-              about the quality, value and style of products to Influence customer buying decisions.
-          </p>
-
-          <h3>
-              Electronics Sales Associate - Best Buy <br/>June 2016 to November 2016
-          </h3>
-          <p class="job">
-              <b>Description:</b><br/>Described merchandise and explain operation of merchandise to customers. Placed special orders
-              and called other stores to find desired items.Operated a cash register to process cash, check and
-              credit card transactions. Recommended merchandise based on customer needs. Explained information
-              about the quality, value and style of products to Influence customer buying decisions.
-          </p>
-          <p class="job">
-              <b>Reason for leaving:</b><br/>The location that I was hired at was shutdown shortly after I was hired.
-              I stayed with the store until it's last day of operation, and even closing down the store on the final
-              day.
-          </p>
-
-          <h3>
-              Patient Attendant - Conway Medical Center <br/>November 2014 to June 2016
-          </h3>
-          <p class="job">
-              <b>Description:</b><br/>The Patient Assistant/Sitter works under the direction of the Nurse Manager and under the
-              direct supervision of the Professional Registered Nurse or delegated Licensed Practical Nurse as a Nurse
-              Aide I (NA I) or Psych Tech,  to observe a patient for harmful and/or dangerous behaviors.  This position
-              is an important component of the continuum of care as is provided to maintain the safety and protect the
-              well-being of patients at-risk for injury.  The observation and care activities are individualized for
-              each patient at the direction the medical staff.  The Patient Personal Care Assistant/ Sitter is also
-              responsible for completing a variety of departmental specific tasks to assist with optimal department
-              safety and functioning
-          </p>
-          <p class="job">
-              <b>Reason for leaving:</b><br/>I transfered schools, from Coastal Carolina University in Conway, SC to USC Beaufort in Beaufort, SC.
-          </p>
-
-          <a name="award" class="anchor"></a>
-          <h2>
-            Awards
-          </h2>
-          <p>
-              For my first semester at USCB I took a class on HTML web developement, Java programming, and database system management. For my HTML and Java classes there was a competition for the final project. In the HTML class each student was to build a personal website about themselves. For this competition I tied for second place, <a>here</a> is the submission I presented for the project, I modified the code from the project to create this website.
-          </p>
-          <figure>
-              <img src="../images/website.PNG" width="400px" alt="Website screenshot" style="border: 2px solid black; max-width: 90%;">
-              <figcaption>Screenshot of the home page of the website used for my final project.</figcaption>
-          </figure>
-          <p>
-              For the competition in the Java class, students were to create a video game in the Greenfoot IDE that was based on Spanish culture. In this competition I tied for third place, <a>here</a> is a link to the submission. For my video game I attempted to create a Civilization-like game based on the settlement of Santa Elena on modern-day Parris Island.
-			</p>
-          <figure>
-              <img src="../images/Greenfoot_screenshot.PNG" width="400px" alt="Video game screenshot" style="border: 2px solid black; max-width: 90%;">
-              <figcaption>Screenshot of the video game used for my final project.</figcaption>
-          </figure>
-          <p>
-
-          </p>
-	  </div>
-  </main>
-  
-  <!-- Footer Section -->
-<!--
-  <footer>
+<!-- Main Section -->
+<main class="main">
+    <h2 class="title">
+        About Me
+    </h2>
+    <div class="ffacts">
+        <p>
+            My favorite game is Skyrim, I enjoy a good IPA, I proposed during the
+            2017 Solar Eclipse, I love playing Dungeons and Dragons, my favorite
+            place to hike is the mountains of North Carolina.
+        </p>
+    </div>
+    <div class="pictures">
+        <img src="../images/wedding.jpg" align="bottom">
+        <img src="../images/candles.jpg" align="bottom">
+        <img src="../images/mountain2.jpg" align="bottom">
+        <img src="../images/cave.png" align="bottom">
+        <img src="../images/mountain3.png" align="bottom">
+        <img src="../images/halloween.jpg" align="bottom">
+    </div>
     
-  </footer>
--->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../slick/slick.min.js"></script>
+  
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.pictures').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+        ]
+      });
+    });
+  </script>
+    
+    <div>
+        <p class="sec_title">
+            Understanding who I am as a person
+        </p>
+        <p class="sec_content">
+            My path to a BA in Computational Science has stoked a passion in me 
+            for all forms of software development, from web design to visualizing
+            stress on an object. Though a great deal of my time is spent behind
+            a computer monitor, I enjoy getting away and finding new mountain
+            trails to explore or a stretch of river to canoe. I have also
+            recently discovered a love for playing Dungeons and Dragons and 
+            immersing myself in a grand fantasy.
+        </p>
+        <p class="sec_content">
+            My first few years of college, I was so uncertain of my future and 
+            decisions. I began pursuit of a Bachelors of Science in Applied
+            Mathematics at Coastal Carolina University, but did not have a real 
+            love for the subject. Following family to Beaufort, South Carolina, 
+            I began looking into the University of South Carolina Beaufort and 
+            found myself at the desk of the Dr. Yimming Ji, the head of the 
+            Computational Science department. My conversation with him that day
+            turned me down a path towards a meaningful and exciting degree. 
+            I have found a love for Computational Science and will do whatever 
+            it takes to further my career in this field.
+        </p>
+    </div>
+</main>
 	
 </body>
 </html>
