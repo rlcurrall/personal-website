@@ -4,7 +4,7 @@ const http = require('http')
 const express = require('express')
 
 /* GLOBAL VARIABLES */
-const publicPath = path.join(__dirname, '..', '/dist')
+const publicPath = path.join(__dirname, '/dist')
 const port = process.env.PORT || 3000
 
 /* SERVER CONFIG */
