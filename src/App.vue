@@ -2,10 +2,12 @@
   <div id="app">
     <header id="nav" class="inset-y-0 bg-gray-900 border-b-4 border-green-500">
       <nav
-        class="container mx-auto my-4 flex flex-wrap justify-between items-center text-xl px-8 md:px-0"
+        class="container mx-auto my-4 flex flex-col sm:flex-row justify-between items-center text-xl px-8 md:px-0"
       >
-        <div class="flex justify-start flex-wrap">
-          <router-link to="/" class="mr-4 hover:underline hover:text-green-500"
+        <div class="flex justify-center flex-wrap my-1 sm:justify-start sm:m-0">
+          <router-link
+            to="/"
+            class="mx-4 hover:underline hover:text-green-500 sm:ml-0"
             >Home</router-link
           >
           <router-link
@@ -15,11 +17,11 @@
           >
           <router-link
             to="/cv"
-            class="ml-4 hover:underline hover:text-green-500"
+            class="mx-4 hover:underline hover:text-green-500 sm:mr-0"
             >C.V.</router-link
           >
         </div>
-        <div class="flex justify-end flex-wrap">
+        <div class="flex justify-center flex-wrap sm:justify-end my-1 sm:m-0">
           <a href="https://github.com/rlcurrall" target="_blank" class="mx-2"
             ><i class="fab fa-github hover:text-green-500"></i
           ></a>

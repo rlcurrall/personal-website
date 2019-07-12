@@ -11,15 +11,19 @@
       />
     </div>
     <article>
-      <h1 class="text-lg border-l border-green-500 pl-2">Welcome!</h1>
+      <h1 class="text-xl border-l border-green-500 pl-2">Welcome!</h1>
       <p class="my-8">
         I'm <b class="text-green-500">Robb Currall</b>, a Christian, husband,
-        dungeon master, and I make a living as a software engineer.
+        and a dungeon master. I make a living developing software.
       </p>
-
       <p class="my-8">
         I graduated in December 2018 with a degree in computational science from
         the University of South Carolina Beaufort.
+      </p>
+      <p>
+        I am currently working as a full-stack developer, developing web
+        applications using Vue and Laravel; though I have started to find a
+        passion for systems programming with Rust.
       </p>
     </article>
   </main>

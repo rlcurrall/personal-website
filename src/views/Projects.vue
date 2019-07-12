@@ -1,5 +1,6 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <main class="container mx-auto p-8 md:px-0">
+    <h1>This is a projects page</h1>
+    <p class="text-yellow-500"><i class="fas fa-tools" /> Under Construction</p>
+  </main>
 </template>
