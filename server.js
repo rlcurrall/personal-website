@@ -13,6 +13,10 @@ let server = http.createServer(app)
 
 app.use(express.static(publicPath))
 
+app.get('*', (req, res) => {
+  res.sendFile(`${publicPath}/index.html`)
+})
+
 /* SET PORT LISTENER */
 server.listen(port, () => {
   console.log(`Server is up on port ${port}`)
