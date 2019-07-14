@@ -1,8 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
-import Projects from './views/Projects.vue'
-import CV from './views/CV.vue'
 
 Vue.use(Router)
 
@@ -13,17 +10,18 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home,
+      component: () => import(/* webpackChunkName: "home" */ './views/Home'),
     },
     {
       path: '/projects',
       name: 'projects',
-      component: Projects,
+      component: () =>
+        import(/* webpackChunkName: "projects" */ './views/Projects'),
     },
     {
       path: '/cv',
       name: 'cv',
-      component: CV,
+      component: () => import(/* webpackChunkName: "cv" */ './views/CV'),
     },
   ],
 })

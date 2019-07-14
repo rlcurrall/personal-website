@@ -5,16 +5,19 @@
   >
     <div class="mr-8 self-center md:self-start">
       <img
-        alt="Vue logo"
-        src="../assets/profile.jpg"
+        alt="Robb Currall"
+        src="@/assets/profile.jpg"
         class="border border-green-500 rounded-full w-32"
       />
     </div>
     <article>
-      <h1 class="text-xl border-l border-green-500 pl-2">Welcome!</h1>
+      <h1>
+        Welcome!
+      </h1>
       <p class="my-8">
-        I'm <b class="text-green-500">Robb Currall</b>, a Christian, husband,
-        and a dungeon master. I make a living developing software.
+        I'm <b>Robb Currall</b>, a Christian,
+        <i class="text-green-500">husband</i>, and a dungeon master. I make a
+        living developing software.
       </p>
       <p class="my-8">
         I graduated in December 2018 with a degree in computational science from

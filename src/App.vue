@@ -49,4 +49,7 @@
   min-height: 100vh
   @apply font-mono
   @apply text-white
+
+a
+  @apply text-white
 </style>
