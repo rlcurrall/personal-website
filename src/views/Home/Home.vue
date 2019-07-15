@@ -15,9 +15,8 @@
         Welcome!
       </h1>
       <p class="my-8">
-        I'm <b>Robb Currall</b>, a Christian,
-        <i class="text-green-500">husband</i>, and a dungeon master. I make a
-        living developing software.
+        I'm <b>Robb Currall</b>, a Christian, husband, and a dungeon master. I
+        make a living developing software.
       </p>
       <p class="my-8">
         I graduated in December 2018 with a degree in computational science from
