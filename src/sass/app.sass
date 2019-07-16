@@ -1,30 +1,20 @@
 @tailwind base
 @tailwind components
-@tailwind utilities
+
+h1, h2, h3, h4
+  @apply pl-2 border-l border-green-500
 
 h1
   @apply text-2xl
-  @apply pl-2
-  @apply border-l
-  @apply border-green-500
 
 h2
   @apply text-xl
-  @apply pl-2
-  @apply border-l
-  @apply border-green-500
 
 h3
   @apply text-lg
-  @apply pl-2
-  @apply border-l
-  @apply border-green-500
 
 h4
   @apply text-base
-  @apply pl-2
-  @apply border-l
-  @apply border-green-500
 
 a
   @apply text-yellow-500
@@ -32,9 +22,9 @@ a
     @apply underline
 
 b
-  @apply text-green-500
-  @apply font-bold
+  @apply text-green-500 font-bold
 
 i:not(i.fa)
-  @apply text-green-500
-  @apply italic
+  @apply text-green-500 italic
+
+@tailwind utilities

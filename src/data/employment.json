@@ -1,0 +1,23 @@
+[
+    {
+        "employer": "Avtec",
+        "startDate": "May 14, 2018",
+        "endDate": "Aug 10, 2018",
+        "position": "Software Engineering Intern",
+        "description": ""
+    },
+    {
+        "employer": "Avtec",
+        "startDate": "Aug 13, 2018",
+        "endDate": "Dec 14, 2018",
+        "position": "Software Engineer",
+        "description": ""
+    },
+    {
+        "employer": "CastleBranch",
+        "startDate": "Jan 7, 2019",
+        "endDate": "",
+        "position": "Software Engineer",
+        "description": ""
+    }
+]

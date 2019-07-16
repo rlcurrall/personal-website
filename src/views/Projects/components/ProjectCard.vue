@@ -2,7 +2,7 @@
   <a
     class="
             flex flex-col items-center w-64 h-64 m-4 bg-gray-800 overflow-hidden
-            rounded border-0 text-white hover:no-underline scale-up-center
+            rounded border-0 text-white shadow-xl hover:no-underline scale-up-center
           "
     :href="project.url"
   >

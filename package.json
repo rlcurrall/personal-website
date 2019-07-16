@@ -9,6 +9,7 @@
     "start": "node ./server.js"
   },
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^1.2.0",
     "core-js": "^2.6.5",
     "express": "^4.17.1",
     "tailwindcss": "^1.0.4",

@@ -1,0 +1,18 @@
+[
+    {
+        "institution": "Coastal Carolina University",
+        "field": "Applied Mathematics",
+        "degree": "",
+        "startDate": 2011,
+        "endDate": 2015,
+        "honors": ""
+    },
+    {
+        "institution": "University of South Carolina",
+        "field": "Computational Science",
+        "degree": "Bachelors",
+        "startDate": 2016,
+        "endDate": 2018,
+        "honors": "Summa Cum Laude"
+    }
+]
