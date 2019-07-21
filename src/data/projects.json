@@ -1,20 +1,44 @@
 [
     {
         "title": "JookBachs RS",
-        "url": "/",
-        "description": "A description about this project.",
+        "url": "https://gitlab.com/sand-shark/jookbachs-rs",
+        "description": "A reimplementation of JookBachs using the Rust programming language.",
         "status": "Active"
     },
     {
         "title": "JookBachs JS",
-        "url": "/",
-        "description": "A description about this project.",
+        "url": "https://gitlab.com/sand-shark/jookbachs-js",
+        "description": "A personal music streaming and synchronization service.",
         "status": "Inactive"
     },
     {
         "title": "Node Server",
-        "url": "/",
-        "description": "A description about this project.",
+        "url": "https://gitlab.com/rlcurrall/purenodeserver",
+        "description": "An attempt to create a Node.js server without using a framework.",
+        "status": "Inactive"
+    },
+    {
+        "title": "Culper Code App",
+        "url": "https://github.com/rlcurrall/CulperCodeApp",
+        "description": "An interactive recreation of the culper code cipher.",
+        "status": "Inactive"
+    },
+    {
+        "title": "Data Visualization",
+        "url": "https://github.com/rlcurrall/DataVisualization",
+        "description": "A small TCL/TK application that shows stress applied to a beam.",
+        "status": "Inactive"
+    },
+    {
+        "title": "Gulf Oil Spill",
+        "url": "https://github.com/rlcurrall/Gulf_Spill",
+        "description": "A MATLAB script that is used to approximate the amount of oil in a photo of the Gulf Oil Spill.",
+        "status": "Inactive"
+    },
+    {
+        "title": "Node.js Chat App",
+        "url": "https://github.com/rlcurrall/Chat_App",
+        "description": "A chat application build using Node.js and Socket.io",
         "status": "Inactive"
     }
 ]

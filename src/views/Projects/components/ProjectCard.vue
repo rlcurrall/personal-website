@@ -5,6 +5,7 @@
             rounded border-0 text-white shadow-xl hover:no-underline scale-up-center
           "
     :href="project.url"
+    target="_blank"
   >
     <div class="bg-gray-900 w-full text-center text-green-500">
       {{ project.title }}
