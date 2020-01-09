@@ -1,6 +1,7 @@
 /* NODE MODULES */
 const path = require('path')
 const http = require('http')
+const helmet = require('helmet')
 const express = require('express')
 
 /* GLOBAL VARIABLES */
@@ -11,6 +12,8 @@ const port = process.env.PORT || 3000
 let app = express()
 let server = http.createServer(app)
 
+app.disable('x-powered-by')
+app.use(helmet())
 app.use(express.static(publicPath))
 
 app.get('*', (req, res) => {
