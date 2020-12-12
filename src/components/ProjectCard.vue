@@ -22,19 +22,22 @@
   </a>
 </template>
 
-<script lang="ts">
-import { Component, Vue, Prop } from 'vue-property-decorator'
-import { Project } from '../types'
-
-@Component
-export default class Projects extends Vue {
-  @Prop({ type: Object, required: true }) readonly project!: Project
+<script>
+export default {
+  props: {
+    project: {
+      type: Object,
+      required: true,
+    },
+  },
 }
 </script>
 
-<style lang="sass" scoped>
-.scale-up-center
-  transition: transform 0.3s ease-in-out
-.scale-up-center:hover
-  transform: scale(1.1)
+<style scoped>
+.scale-up-center {
+  transition: transform 0.3s ease-in-out;
+}
+.scale-up-center:hover {
+  transform: scale(1.1);
+}
 </style>

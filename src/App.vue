@@ -41,15 +41,17 @@
   </div>
 </template>
 
-<style scoped lang="sass">
-#app
-  display: flex
-  flex-direction: column
-  background-color: #232D3D
-  min-height: 100vh
-  @apply font-mono
-  @apply text-white
+<style scoped>
+#app {
+  display: flex;
+  flex-direction: column;
+  background-color: #232D3D;
+  min-height: 100vh;
+  @apply font-mono;
+  @apply text-white;
+}
 
-a
-  @apply text-white
+a {
+  @apply text-white;
+}
 </style>
