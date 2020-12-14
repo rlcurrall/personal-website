@@ -1,41 +1,31 @@
 <template>
-  <main class="container mx-auto p-8 md:px-0">
-    <h1>
-      Projects
-    </h1>
-    <p class="italic text-xs py-4 text-red-500">
-      <i class="fas fa-tools" /> Under Construction
-    </p>
-    <p>
-      These days my personal projects have taken a back seat to work. I have
-      been teaching myself the
-      <a href="https://www.rust-lang.org/" target="_blank">
-        Rust
-      </a>
-      programming language by attempting to create a web application using
-      <a href="https://github.com/actix/actix-web" target="_blank">
-        Actix Web
-      </a>
-      .
-    </p>
-    <section class="flex flex-wrap justify-center">
-      <project-card
-        v-for="(project, index) in projects"
-        :key="index"
-        :project="project"
-      />
-    </section>
-  </main>
+    <main class="container mx-auto p-8 md:px-0">
+        <h1>
+            Projects
+        </h1>
+        <p class="italic text-xs py-4 text-red-500"><i class="fas fa-tools" /> Under Construction</p>
+        <p>
+            These days my personal projects have taken a back seat to work. I have been teaching myself the
+            <a :href="rustLink" target="_blank">Rust </a> programming language by attempting to create a web application
+            using <a :href="actixLink" target="_blank"> Actix Web</a>.
+        </p>
+        <section class="flex flex-wrap justify-center">
+            <project-card v-for="(project, index) in projects" :key="index" :project="project" />
+        </section>
+    </main>
 </template>
 
 <script>
-import ProjectCard from '../components/ProjectCard.vue'
-import myProjects from '../data/projects.json'
+import ProjectCard from '../components/ProjectCard.vue';
+import projects from '../data/projects.json';
 
 export default {
-  components: { ProjectCard },
-  data: () => ({
-    projects: myProjects,
-  }),
-}
+    components: { ProjectCard },
+    setup() {
+        const actixLink = 'https://github.com/actix/actix-web';
+        const rustLink = 'https://www.rust-lang.org';
+
+        return { actixLink, rustLink, projects };
+    },
+};
 </script>
