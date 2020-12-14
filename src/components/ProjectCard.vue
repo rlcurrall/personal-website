@@ -14,14 +14,14 @@
         <div class="p-2 flex-grow text-sm">
             {{ project.description }}
         </div>
-        <div class="w-full p-2 flex justify-end">
+        <!-- <div class="w-full p-2 flex justify-end">
             <span
                 class="rounded p-1 text-black text-xs"
                 :class="project.status === 'Active' ? 'bg-green-500' : 'bg-gray-500'"
             >
                 {{ project.status }}
             </span>
-        </div>
+        </div> -->
     </a>
 </template>
 
