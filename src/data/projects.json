@@ -1,20 +1,32 @@
 [
     {
-        "title": "JookBachs RS",
-        "url": "https://gitlab.com/sand-shark/jookbachs-rs",
-        "description": "A reimplementation of JookBachs using the Rust programming language.",
+        "title": "Actix Token Auth",
+        "url": "https://github.com/rlcurrall/actix-token-auth",
+        "description": "An example of how to implement token authentication in the Rust server framework, Actix Web.",
         "status": "Active"
     },
     {
+        "title": "PHP & Rust Performance",
+        "url": "https://github.com/rlcurrall/binary-tree-performance-php-vs-rust",
+        "description": "A small project to test the performance of Rust and PHP in comparing two binary trees.",
+        "status": "Active"
+    },
+    {
+        "title": "JookBachs RS",
+        "url": "https://github.com/rlcurrall/jookbachs-rs",
+        "description": "A reimplementation of JookBachs using the Rust programming language.",
+        "status": "Inactive"
+    },
+    {
         "title": "JookBachs JS",
-        "url": "https://gitlab.com/sand-shark/jookbachs-js",
+        "url": "https://github.com/rlcurrall/jookbachs-ts",
         "description": "A personal music streaming and synchronization service.",
         "status": "Inactive"
     },
     {
-        "title": "Node Server",
-        "url": "https://gitlab.com/rlcurrall/purenodeserver",
-        "description": "An attempt to create a Node.js server without using a framework.",
+        "title": "Node.js Chat App",
+        "url": "https://github.com/rlcurrall/chat-app",
+        "description": "A chat application build using Node.js and Socket.io",
         "status": "Inactive"
     },
     {
@@ -36,9 +48,9 @@
         "status": "Inactive"
     },
     {
-        "title": "Node.js Chat App",
-        "url": "https://github.com/rlcurrall/Chat_App",
-        "description": "A chat application build using Node.js and Socket.io",
+        "title": "Node Server",
+        "url": "https://gitlab.com/rlcurrall/purenodeserver",
+        "description": "An attempt to create a Node.js server without using a framework.",
         "status": "Inactive"
     }
 ]

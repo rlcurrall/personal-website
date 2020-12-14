@@ -3,8 +3,8 @@
         <h1>
             Projects
         </h1>
-        <p class="italic text-xs py-4 text-red-500"><i class="fas fa-tools" /> Under Construction</p>
-        <p>
+        <!-- <p class="italic text-xs py-4 text-red-500"><i class="fas fa-tools" /> Under Construction</p> -->
+        <p class="my-8">
             These days my personal projects have taken a back seat to work. I have been teaching myself the
             <a :href="rustLink" target="_blank">Rust </a> programming language by attempting to create a web application
             using <a :href="actixLink" target="_blank"> Actix Web</a>.
