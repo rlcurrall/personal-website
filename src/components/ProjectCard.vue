@@ -8,7 +8,7 @@
         :href="project.url"
         target="_blank"
     >
-        <div class="py-1 bg-gray-300 w-full text-center text-green-500">
+        <div class="py-1 bg-gray-300 w-full text-center text-yellow-600">
             {{ project.title }}
         </div>
         <div class="p-2 flex-grow text-sm">
