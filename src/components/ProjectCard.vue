@@ -1,16 +1,19 @@
 <template>
     <a
         class="
-            flex flex-col items-center w-64 h-64 m-4 bg-gray-800 overflow-hidden
-            rounded border-0 text-white shadow-xl hover:no-underline scale-up-center
+            flex flex-col items-center w-64 h-64 m-4 bg-gray-200 overflow-hidden
+            rounded border-0 text-black shadow-xl hover:no-underline
+            focus:outline-none focus:ring focus:border-green-300 scale-up-center
           "
         :href="project.url"
         target="_blank"
     >
-        <div class="bg-gray-900 w-full text-center text-green-500">
+        <div class="py-1 bg-gray-300 w-full text-center text-green-500">
             {{ project.title }}
         </div>
-        <div class="p-2 flex-grow">{{ project.description }}</div>
+        <div class="p-2 flex-grow text-sm">
+            {{ project.description }}
+        </div>
         <div class="w-full p-2 flex justify-end">
             <span
                 class="rounded p-1 text-black text-xs"
@@ -25,10 +28,7 @@
 <script>
 export default {
     props: {
-        project: {
-            type: Object,
-            required: true,
-        },
+        project: { type: Object, required: true },
     },
 };
 </script>
