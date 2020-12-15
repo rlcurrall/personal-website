@@ -1,7 +1,7 @@
-import path from 'path';
-import http from 'http';
-import helmet from 'helmet';
-import express from 'express';
+const path = require('path');
+const http = require('http');
+const helmet = require('helmet');
+const express = require('express');
 
 const publicPath = path.join(process.cwd(), '/dist');
 const port = process.env.PORT || 3000;
