@@ -4,7 +4,7 @@
     md:flex-row md:px-0"
     >
         <div class="mx-0 mb-10 self-center md:mr-8 md:my-0 md:self-start">
-            <img alt="Robb Currall" src="@/assets/profile.jpg" class="border border-green-500 rounded-full w-32" />
+            <img alt="Robb Currall" src="../assets/profile.jpg" class="border border-green-500 rounded-full w-32" />
         </div>
         <article class="space-y-8 max-w-3xl text-justify">
             <h1>
