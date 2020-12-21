@@ -11,7 +11,7 @@
 <script>
 export default {
     setup() {
-        const resumeId = '1hUInP7VyxqocZNsxG7lPbzoL9wgbK1ru';
+        const resumeId = '1w0aGvBjc1HyzqOuUPD3-Z4Id_xwLdDf5';
 
         return { resumeId };
     },
